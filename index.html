@@ -1,16 +1,17 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="OpoViable te ayuda a explorar si preparar una oposición encaja con tu trabajo, familia y tiempo disponible. Compara escenarios realistas." />
-  <title>OpoViable | Tu oposición, tu vida real</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Inter','sans-serif'],display:['Plus Jakarta Sans','sans-serif']},colors:{ink:'#12243B',navy:'#0C2440',teal:'#14B8A6',mist:'#F2F7F8'}}}};</script>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="OpoViable: simulador gratuito de planificación de oposiciones. Compara horas disponibles y rangos ilustrativos de preparación, sin registro ni envío de respuestas." name="description"/>
+<title>OpoViable | Tu oposición, tu vida real</title>
+<script src="https://cdn.tailwindcss.com"></script>
+
+
+
+<script>tailwind.config={theme:{extend:{fontFamily:{sans:['Inter','sans-serif'],display:['Plus Jakarta Sans','sans-serif']},colors:{ink:'#12243B',navy:'#0C2440',teal:'#14B8A6',mist:'#F2F7F8'}}}};</script>
+<style>
     html{scroll-behavior:smooth}body{font-family:'Inter',sans-serif}h1,h2,h3{font-family:'Plus Jakarta Sans',sans-serif} .glass{background:rgba(255,255,255,.91);backdrop-filter:blur(14px)} .soft-shadow{box-shadow:0 22px 70px rgba(12,36,64,.11)} .hero-overlay{background:linear-gradient(120deg,rgba(8,26,55,.70) 0%,rgba(8,37,74,.42) 48%,rgba(8,27,55,.66) 100%)}
     .hero-logo-panel{background:rgba(255,255,255,.16);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid rgba(255,255,255,.35);border-bottom:1px solid rgba(255,255,255,.35)}
     .brand-gradient{background:linear-gradient(105deg,#0a2c58 5%,#087e9e 52%,#0bb5a5 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -18,82 +19,171 @@
     .section-glow{background:radial-gradient(circle at 10% 0%,rgba(19,184,166,.13),transparent 45%),radial-gradient(circle at 95% 95%,rgba(59,130,246,.12),transparent 48%)}
     .feature-card{transition:transform .25s,box-shadow .25s}.feature-card:hover{transform:translateY(-5px);box-shadow:0 20px 55px rgba(12,36,64,.12)}
  :focus-visible{outline:3px solid #14B8A6;outline-offset:3px} @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-  </style>
+  
+body{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}h1,h2,h3{font-family:inherit}
+</style>
 </head>
 <body class="bg-white text-ink antialiased">
-  <header class="sticky top-0 z-50 border-b border-slate-100 glass">
-    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8" aria-label="Navegación principal">
-      <a href="#inicio" class="font-display text-2xl font-extrabold tracking-tight text-navy">Opo<span class="text-teal">Viable</span><span class="ml-1 inline-block h-2 w-2 rounded-full bg-teal"></span></a>
-      <div class="hidden items-center gap-8 text-sm font-semibold text-slate-600 md:flex"><a class="hover:text-teal" href="#problema">El reto</a><a class="hover:text-teal" href="#funciona">Cómo funciona</a><a class="hover:text-teal" href="#beneficios">Ventajas</a><a class="hover:text-teal" href="#faq">Preguntas</a></div>
-      <a href="#contacto" class="rounded-full bg-gradient-to-r from-[#0c3664] to-[#087f90] px-5 py-3 text-sm font-bold text-white shadow-md transition hover:from-[#087f90] hover:to-[#10bda9]">Quiero conocerlo <span aria-hidden="true">↗</span></a>
-    </nav>
-  </header>
-  <main>
-    <section id="inicio" class="relative isolate overflow-hidden bg-navy text-white">
-      <img src="imagenes/imagen_1.jpg" data-fallback="https://nawjanimri.github.io/opoviable/imagenes/imagen_1.jpg" alt="Persona adulta preparando sus estudios" class="absolute inset-0 z-0 h-full w-full object-cover object-center" fetchpriority="high" />
-      <div class="hero-overlay absolute inset-0 z-10 pointer-events-none"></div>
-      <div class="absolute inset-x-0 top-0 z-30 h-1 accent-line"></div>
-      <div class="relative z-20 flex min-h-[680px] w-full flex-col items-center justify-center py-16 text-center sm:min-h-[760px] lg:py-24">
-        <div class="hero-logo-panel w-full px-5 py-10 text-white sm:px-14 sm:py-12">
-          <div class="font-display text-[clamp(3.9rem,12vw,8rem)] font-extrabold leading-none tracking-[-.075em] text-white drop-shadow-lg" aria-label="OpoViable">Opo<span class="text-teal">Viable</span><span class="ml-2 inline-block h-3 w-3 rounded-full bg-amber-400 align-baseline sm:h-4 sm:w-4"></span></div>
-          <div class="mx-auto mt-6 h-1 w-28 rounded-full accent-line"></div>
-          <p class="mt-6 font-display text-lg font-bold tracking-tight text-white drop-shadow-md sm:text-2xl">Haciendo viable preparar una oposición</p>
-        </div>
-        <div class="mt-10 max-w-3xl px-5">
-          <span class="inline-flex items-center gap-2 rounded-full border border-white/35 bg-navy/45 px-5 py-2 text-sm font-semibold text-white backdrop-blur-md"><span class="h-2 w-2 rounded-full bg-amber-300"></span> Un simulador pensado para tu vida real</span>
-          <h1 class="mt-6 font-display text-3xl font-extrabold leading-tight tracking-tight drop-shadow-lg sm:text-4xl lg:text-5xl">Tu oposición no debería exigir <span class="text-teal-200">poner tu vida en pausa.</span></h1>
-          <p class="mx-auto mt-5 max-w-2xl text-base leading-8 text-white drop-shadow-md sm:text-lg">¿Trabajas, tienes hijos o apenas encuentras horas para estudiar? Explora distintos escenarios y descubre qué preparación podría encajar con tu tiempo real.</p>
-          <div class="mt-8 flex flex-wrap justify-center gap-4"><a href="#contacto" class="rounded-full bg-amber-400 px-8 py-4 font-extrabold text-navy shadow-lg transition hover:bg-amber-300">Quiero probar OpoViable →</a><a href="#funciona" class="rounded-full border border-white/70 bg-white/15 px-8 py-4 font-bold text-white backdrop-blur-md transition hover:bg-white/25">Descubre cómo funciona</a></div>
-          <p class="mt-6 text-sm text-white/85">Proyecto en fase de validación · Sin promesas de aprobado</p>
-        </div>
-      </div>
-    </section>
-    <section id="problema" class="section-glow py-20 lg:py-28"><div class="mx-auto max-w-7xl px-5 lg:px-8"><div class="grid items-center gap-12 lg:grid-cols-2"><div><span class="text-sm font-extrabold uppercase tracking-[.2em] text-teal-700">El reto real</span><h2 class="mt-4 font-display text-3xl font-extrabold leading-tight sm:text-4xl">No te faltan ganas. Te falta saber <span class="text-teal-700">si el plan encaja.</span></h2><p class="mt-6 text-lg leading-8 text-slate-600">Empezar una oposición implica meses o años de esfuerzo. Cuando hay trabajo, familia y responsabilidades, la duda no es solo qué estudiar, sino si podrás mantener el ritmo.</p><div class="mt-8 space-y-4"> <p class="flex gap-3"><span class="text-teal-700">✓</span><span>¿Cuántas horas puedes dedicar de verdad?</span></p><p class="flex gap-3"><span class="text-teal-700">✓</span><span>¿Qué cambia si una semana no puedes estudiar?</span></p><p class="flex gap-3"><span class="text-teal-700">✓</span><span>¿Qué escenario sería más sostenible para ti?</span></p></div></div><div class="relative"><img class="h-[430px] w-full rounded-[2rem] object-cover soft-shadow" src="imagenes/imagen_2.jpg" data-fallback="https://nawjanimri.github.io/opoviable/imagenes/imagen_2.jpg" alt="Estudio de oposiciones en un entorno doméstico" loading="lazy"/><div class="absolute -bottom-6 left-5 right-5 rounded-2xl bg-white p-5 shadow-xl sm:left-auto sm:right-[-1rem] sm:max-w-xs"><p class="font-display text-lg font-extrabold">La pregunta importante</p><p class="mt-2 text-sm leading-6 text-slate-600">«¿Es viable para mí preparar esta oposición con mi situación actual?»</p></div></div></div></div></section>
-    <section id="funciona" class="bg-gradient-to-br from-[#eaf7f5] via-[#eff5ff] to-[#f9f5ec] py-20 lg:py-28"><div class="mx-auto max-w-7xl px-5 lg:px-8"><div class="mx-auto max-w-3xl text-center"><span class="text-sm font-extrabold uppercase tracking-[.2em] text-teal-700">Cómo funcionará</span><h2 class="mt-4 font-display text-3xl font-extrabold sm:text-4xl">Tres pasos para tomar decisiones con más claridad</h2><p class="mt-5 text-lg text-slate-600">OpoViable está concebido como un simulador de escenarios, no como una promesa de conseguir plaza.</p></div><div class="mt-14 grid gap-6 md:grid-cols-3"><article class="feature-card rounded-3xl border border-white bg-white p-8 shadow-sm"><span class="text-5xl font-extrabold text-teal-200">01</span><h3 class="mt-6 text-xl font-extrabold">Cuéntanos tu situación</h3><p class="mt-3 leading-7 text-slate-600">Indica la oposición, tus horas disponibles, tus responsabilidades y tu punto de partida.</p></article><article class="feature-card rounded-3xl border border-white bg-white p-8 shadow-sm"><span class="text-5xl font-extrabold text-teal-200">02</span><h3 class="mt-6 text-xl font-extrabold">Compara escenarios</h3><p class="mt-3 leading-7 text-slate-600">Visualiza alternativas de dedicación conservadora, habitual o intensiva y su impacto orientativo.</p></article><article class="feature-card rounded-3xl border border-white bg-white p-8 shadow-sm"><span class="text-5xl font-extrabold text-teal-200">03</span><h3 class="mt-6 text-xl font-extrabold">Decide con perspectiva</h3><p class="mt-3 leading-7 text-slate-600">Valora qué ritmo se adapta mejor a tu vida y qué cambios necesitarías para sostenerlo.</p></article></div></div></section>
-    <section id="beneficios" class="py-20 lg:py-28"><div class="mx-auto max-w-7xl px-5 lg:px-8"><div class="grid items-center gap-12 lg:grid-cols-2"><div class="grid grid-cols-2 gap-4"><img src="imagenes/imagen_3.jpg" data-fallback="https://nawjanimri.github.io/opoviable/imagenes/imagen_3.jpg" alt="Persona estudiando y organizando su tiempo" class="h-64 w-full rounded-3xl object-cover" loading="lazy"/><img src="imagenes/imagen_4.jpg" data-fallback="https://nawjanimri.github.io/opoviable/imagenes/imagen_4.jpg" alt="Persona adulta estudiando desde casa" class="mt-10 h-64 w-full rounded-3xl object-cover" loading="lazy"/></div><div><span class="text-sm font-extrabold uppercase tracking-[.2em] text-teal-700">Pensado para tu realidad</span><h2 class="mt-4 font-display text-3xl font-extrabold sm:text-4xl">No todos los opositores parten del mismo lugar.</h2><p class="mt-6 text-lg leading-8 text-slate-600">OpoViable quiere ayudar especialmente a quienes no pueden dedicar una jornada completa al estudio.</p><div class="mt-8 grid gap-5"><div class="rounded-2xl border border-slate-100 p-5"><h3 class="font-extrabold">Trabajo y familia</h3><p class="mt-1 text-slate-600">Introduce una disponibilidad que contemple responsabilidades e imprevistos.</p></div><div class="rounded-2xl border border-slate-100 p-5"><h3 class="font-extrabold">Decisiones más realistas</h3><p class="mt-1 text-slate-600">Compara opciones antes de invertir meses de esfuerzo.</p></div><div class="rounded-2xl border border-slate-100 p-5"><h3 class="font-extrabold">Sin falsas certezas</h3><p class="mt-1 text-slate-600">Escenarios orientativos con supuestos visibles, no porcentajes de aprobado inventados.</p></div></div></div></div></div></section>
-    <section class="bg-navy py-20 text-white"><div class="mx-auto grid max-w-7xl items-center gap-10 px-5 lg:grid-cols-[1fr_1fr] lg:px-8"><div><span class="text-sm font-extrabold uppercase tracking-[.2em] text-teal-300">Tu tiempo cuenta</span><h2 class="mt-4 font-display text-3xl font-extrabold sm:text-4xl">El mejor plan es el que puedes mantener.</h2><p class="mt-5 text-lg leading-8 text-slate-300">No se trata de estudiar como si no tuvieras obligaciones. Se trata de tomar decisiones con las obligaciones que sí tienes.</p><a href="#contacto" class="mt-8 inline-block rounded-full bg-teal px-7 py-4 font-bold text-navy hover:bg-teal-300">Participar en la validación →</a></div><img src="imagenes/imagen_5.jpg" data-fallback="https://nawjanimri.github.io/opoviable/imagenes/imagen_5.jpg" alt="Persona reflexionando sobre su preparación" loading="lazy" class="h-80 w-full rounded-3xl object-cover lg:h-96"/></div></section>
-    <section id="faq" class="py-20"><div class="mx-auto max-w-4xl px-5"><h2 class="text-center font-display text-3xl font-extrabold sm:text-4xl">Preguntas frecuentes</h2><div class="mt-10 divide-y divide-slate-200"><details class="group py-5"><summary class="cursor-pointer list-none font-bold">¿OpoViable puede decirme si aprobaré? <span class="float-right text-teal-700">+</span></summary><p class="mt-3 leading-7 text-slate-600">No. Su propósito es comparar escenarios orientativos de preparación, no garantizar resultados ni calcular probabilidades de aprobado sin datos validados.</p></details><details class="group py-5"><summary class="cursor-pointer list-none font-bold">¿Está pensado para quienes trabajan? <span class="float-right text-teal-700">+</span></summary><p class="mt-3 leading-7 text-slate-600">Sí. Está concebido especialmente para personas adultas con empleo, hijos u otras responsabilidades que limitan su tiempo de estudio.</p></details><details class="group py-5"><summary class="cursor-pointer list-none font-bold">¿El simulador ya está disponible? <span class="float-right text-teal-700">+</span></summary><p class="mt-3 leading-7 text-slate-600">OpoViable está en fase de diseño y validación. Puedes mostrar tu interés y ayudar a definir el primer prototipo.</p></details><details class="group py-5"><summary class="cursor-pointer list-none font-bold">¿Tengo que estar preparando una oposición? <span class="float-right text-teal-700">+</span></summary><p class="mt-3 leading-7 text-slate-600">No. También está dirigido a quienes se están planteando empezar y quieren evaluar antes si la preparación encaja con su vida.</p></details></div></div></section>
-    <section id="contacto" class="bg-gradient-to-br from-[#e9f7f4] via-[#edf4ff] to-[#f5f8fc] py-20 lg:py-28"><div class="mx-auto grid max-w-6xl gap-12 px-5 lg:grid-cols-[.85fr_1.15fr] lg:px-8"><div><span class="text-sm font-extrabold uppercase tracking-[.2em] text-teal-700">Ayúdanos a construirlo</span><h2 class="mt-4 font-display text-3xl font-extrabold sm:text-4xl">¿Te gustaría probar OpoViable?</h2><p class="mt-6 leading-8 text-slate-600">Estamos validando la idea con personas que se plantean opositar o ya han empezado. Cuéntanos tu situación y qué te gustaría que resolviera el simulador.</p><p class="mt-7 text-sm text-slate-500">También puedes escribir a <a class="font-semibold text-teal-800 underline" href="mailto:alvarezdescargastemp@gmail.com">alvarezdescargastemp@gmail.com</a>.</p></div><div class="rounded-3xl bg-white p-6 soft-shadow sm:p-9"><iframe name="opoviableFormSink" id="opoviableFormSink" title="Recepción del formulario" class="hidden" aria-hidden="true"></iframe><form id="contactForm" method="POST" action="https://script.google.com/macros/s/AKfycbxzamDJlPEd4vcITaHtU6QAsmNKPxTWs7zGVb43wpBFPAnFvL3e8DwtqoDi_PaXrpbvlA/exec" target="opoviableFormSink" novalidate><div class="grid gap-5 sm:grid-cols-2"><div><label for="nombre" class="mb-2 block text-sm font-bold">Nombre *</label><input id="nombre" name="nombre" type="text" autocomplete="name" required maxlength="100" class="w-full rounded-xl border border-slate-300 px-4 py-3 focus:border-teal" placeholder="Tu nombre" /></div><div><label for="email" class="mb-2 block text-sm font-bold">Correo electrónico *</label><input id="email" name="email" type="email" autocomplete="email" required maxlength="254" class="w-full rounded-xl border border-slate-300 px-4 py-3" placeholder="nombre@correo.com" /></div></div><div class="mt-5"><label for="situacion" class="mb-2 block text-sm font-bold">Tu situación actual *</label><select id="situacion" name="situacion" required class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3"><option value="">Selecciona una opción</option><option value="valorando">Estoy valorando empezar una oposición</option><option value="preparando">Ya estoy preparando una oposición</option><option value="pausa">He pausado o abandonado una preparación</option><option value="otro">Otra situación</option></select></div><div class="mt-5"><label for="horas" class="mb-2 block text-sm font-bold">Horas de estudio disponibles a la semana</label><select id="horas" name="horas_semanales" class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3"><option value="">Prefiero no indicarlo</option><option value="menos5">Menos de 5 horas</option><option value="5a10">De 5 a 10 horas</option><option value="11a15">De 11 a 15 horas</option><option value="16a20">De 16 a 20 horas</option><option value="mas20">Más de 20 horas</option></select></div><div class="mt-5"><label for="mensaje" class="mb-2 block text-sm font-bold">¿Qué te preocupa más de preparar una oposición? *</label><textarea id="mensaje" name="mensaje" required maxlength="2000" rows="4" class="w-full resize-y rounded-xl border border-slate-300 px-4 py-3" placeholder="Por ejemplo: no saber si llegaré a tiempo, compaginar estudio y trabajo..."></textarea></div><div class="mt-5 flex items-start gap-3"><input id="privacidad" name="consentimiento" type="checkbox" required class="mt-1 h-4 w-4 accent-teal-600"/><label for="privacidad" class="text-sm leading-6 text-slate-600">Acepto que mis datos se utilicen para responder a mi solicitud y recoger mi interés por el prototipo. Entiendo que no debo incluir información sensible en el mensaje. *</label></div><p class="mt-3 text-xs leading-5 text-slate-500">Responsable de contacto: equipo OpoViable · <a class="underline" href="mailto:alvarezdescargastemp@gmail.com">alvarezdescargastemp@gmail.com</a>. Antes de publicar y recoger datos reales, completa el aviso de privacidad con identidad del responsable, base jurídica, destinatarios, conservación y derechos.</p><div class="mt-6 hidden" aria-hidden="true"><label for="website">No rellenar</label><input id="website" name="website" tabindex="-1" autocomplete="off" /></div><button id="submitBtn" type="submit" class="mt-6 w-full rounded-full bg-navy px-6 py-4 font-extrabold text-white transition hover:bg-teal hover:text-navy">Enviar mi interés →</button><p id="formStatus" class="mt-4 text-sm" role="status" aria-live="polite"></p></form></div></div></section>
-  </main>
-  <footer class="bg-[#081b30] py-10 text-slate-300"><div class="mx-auto flex max-w-7xl flex-col justify-between gap-5 px-5 md:flex-row md:items-center lg:px-8"><div><div class="font-display text-xl font-extrabold text-white">Opo<span class="text-teal">Viable</span></div><p class="mt-2 text-sm">Tu oposición, tu vida real.</p></div><div class="text-sm"><a href="mailto:alvarezdescargastemp@gmail.com" class="hover:text-white">Contacto</a><span class="mx-3">·</span><a href="#contacto" class="hover:text-white">Privacidad y datos</a></div><p class="text-sm">© <span id="year"></span> OpoViable · Proyecto en validación</p></div></footer>
-  <script>
-    const FORM_ENDPOINT = "https://script.google.com/macros/s/AKfycbxzamDJlPEd4vcITaHtU6QAsmNKPxTWs7zGVb43wpBFPAnFvL3e8DwtqoDi_PaXrpbvlA/exec";
-    document.getElementById('year').textContent = new Date().getFullYear();
-    document.querySelectorAll('img[data-fallback]').forEach(img => { img.addEventListener('error', () => { if(!img.dataset.retried){img.dataset.retried='1';img.src=img.dataset.fallback;} }); });
-    const form=document.getElementById('contactForm');
-    const status=document.getElementById('formStatus');
-    const button=document.getElementById('submitBtn');
-    const sink=document.getElementById('opoviableFormSink');
-    let awaitingSubmission=false;
-    let submissionTimeout;
-    sink.addEventListener('load', () => {
-      if (!awaitingSubmission) return;
-      awaitingSubmission=false;
-      clearTimeout(submissionTimeout);
-      button.disabled=false;
-      button.textContent='Enviar mi interés →';
-      status.className='mt-4 text-sm text-teal-800';
-      status.textContent='El formulario se ha remitido a Google. Comprueba en la hoja «Contactos» que la fila se ha guardado; la página no puede verificar el contenido de la respuesta.';
-    });
-    form.addEventListener('submit', event => {
-      event.preventDefault();
-      status.textContent='';
-      if (!form.reportValidity() || form.elements.website.value || awaitingSubmission) return;
-      button.disabled=true;
-      button.textContent='Enviando…';
-      awaitingSubmission=true;
-      // Envío HTML tradicional a iframe oculto: evita el bloqueo CORS de fetch JSON.
-      // El script espera e.parameter y consentimiento = "on".
-      form.submit();
-      submissionTimeout=setTimeout(() => {
-        if (!awaitingSubmission) return;
-        awaitingSubmission=false;
-        button.disabled=false;
-        button.textContent='Enviar mi interés →';
-        status.className='mt-4 text-sm text-amber-800';
-        status.textContent='No hemos podido comprobar que terminara el envío. Antes de reintentarlo, comprueba si tus datos aparecen en Google Sheets para evitar duplicados.';
-      },15000);
-    });
-  </script>
+<header class="sticky top-0 z-50 border-b border-slate-100 glass">
+<nav aria-label="Navegación principal" class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
+<a class="font-display text-2xl font-extrabold tracking-tight text-navy" href="#inicio">Opo<span class="text-teal">Viable</span><span class="ml-1 inline-block h-2 w-2 rounded-full bg-teal"></span></a>
+<div class="hidden items-center gap-8 text-sm font-semibold text-slate-600 md:flex"><a class="hover:text-teal" href="#problema">El reto</a><a class="hover:text-teal" href="#funciona">Cómo funciona</a><a class="hover:text-teal" href="#beneficios">Ventajas</a><a class="hover:text-teal" href="#faq">Preguntas</a></div>
+<a class="rounded-full bg-gradient-to-r from-[#0c3664] to-[#087f90] px-5 py-3 text-sm font-bold text-white shadow-md transition hover:from-[#087f90] hover:to-[#10bda9]" href="#simulador">Probar simulador <span aria-hidden="true">↗</span></a>
+</nav>
+</header>
+<main>
+<section class="relative isolate overflow-hidden bg-navy text-white" id="inicio">
+<img alt="Persona adulta preparando sus estudios" class="absolute inset-0 z-0 h-full w-full object-cover object-center" data-fallback="https://nawjanimri.github.io/opoviable/imagenes/imagen_1.jpg" fetchpriority="high" src="imagenes/imagen_1.jpg"/>
+<div class="hero-overlay absolute inset-0 z-10 pointer-events-none"></div>
+<div class="absolute inset-x-0 top-0 z-30 h-1 accent-line"></div>
+<div class="relative z-20 flex min-h-[680px] w-full flex-col items-center justify-center py-16 text-center sm:min-h-[760px] lg:py-24">
+<div class="hero-logo-panel w-full px-5 py-10 text-white sm:px-14 sm:py-12">
+<div aria-label="OpoViable" class="font-display text-[clamp(3.9rem,12vw,8rem)] font-extrabold leading-none tracking-[-.075em] text-white drop-shadow-lg">Opo<span class="text-teal">Viable</span><span class="ml-2 inline-block h-3 w-3 rounded-full bg-amber-400 align-baseline sm:h-4 sm:w-4"></span></div>
+<div class="mx-auto mt-6 h-1 w-28 rounded-full accent-line"></div>
+<p class="mt-6 font-display text-lg font-bold tracking-tight text-white drop-shadow-md sm:text-2xl">Haciendo viable preparar una oposición</p>
+</div>
+<div class="mt-10 max-w-3xl px-5">
+<span class="inline-flex items-center gap-2 rounded-full border border-white/35 bg-navy/45 px-5 py-2 text-sm font-semibold text-white backdrop-blur-md"><span class="h-2 w-2 rounded-full bg-amber-300"></span> Un simulador pensado para tu vida real</span>
+<h1 class="mt-6 font-display text-3xl font-extrabold leading-tight tracking-tight drop-shadow-lg sm:text-4xl lg:text-5xl">Tu oposición no debería exigir <span class="text-teal-200">poner tu vida en pausa.</span></h1>
+<p class="mx-auto mt-5 max-w-2xl text-base leading-8 text-white drop-shadow-md sm:text-lg">¿Trabajas, tienes hijos o apenas encuentras horas para estudiar? Explora distintos escenarios y descubre qué preparación podría encajar con tu tiempo real.</p>
+<div class="mt-8 flex flex-wrap justify-center gap-4"><a class="rounded-full bg-amber-400 px-8 py-4 font-extrabold text-navy shadow-lg transition hover:bg-amber-300" href="#simulador">Probar el simulador →</a><a class="rounded-full border border-white/70 bg-white/15 px-8 py-4 font-bold text-white backdrop-blur-md transition hover:bg-white/25" href="#funciona">Descubre cómo funciona</a></div>
+<p class="mt-6 text-sm text-white/85">Proyecto en fase de validación · Sin promesas de aprobado</p>
+</div>
+</div>
+</section>
+<section class="section-glow py-20 lg:py-28" id="problema"><div class="mx-auto max-w-7xl px-5 lg:px-8"><div class="grid items-center gap-12 lg:grid-cols-2"><div><span class="text-sm font-extrabold uppercase tracking-[.2em] text-teal-700">El reto real</span><h2 class="mt-4 font-display text-3xl font-extrabold leading-tight sm:text-4xl">No te faltan ganas. Te falta saber <span class="text-teal-700">si el plan encaja.</span></h2><p class="mt-6 text-lg leading-8 text-slate-600">Empezar una oposición implica meses o años de esfuerzo. Cuando hay trabajo, familia y responsabilidades, la duda no es solo qué estudiar, sino si podrás mantener el ritmo.</p><div class="mt-8 space-y-4"> <p class="flex gap-3"><span class="text-teal-700">✓</span><span>¿Cuántas horas puedes dedicar de verdad?</span></p><p class="flex gap-3"><span class="text-teal-700">✓</span><span>¿Qué cambia si una semana no puedes estudiar?</span></p><p class="flex gap-3"><span class="text-teal-700">✓</span><span>¿Qué escenario sería más sostenible para ti?</span></p></div></div><div class="relative"><img alt="Estudio de oposiciones en un entorno doméstico" class="h-[430px] w-full rounded-[2rem] object-cover soft-shadow" data-fallback="https://nawjanimri.github.io/opoviable/imagenes/imagen_2.jpg" loading="lazy" src="imagenes/imagen_2.jpg"/><div class="absolute -bottom-6 left-5 right-5 rounded-2xl bg-white p-5 shadow-xl sm:left-auto sm:right-[-1rem] sm:max-w-xs"><p class="font-display text-lg font-extrabold">La pregunta importante</p><p class="mt-2 text-sm leading-6 text-slate-600">«¿Es viable para mí preparar esta oposición con mi situación actual?»</p></div></div></div></div></section>
+<section class="bg-gradient-to-br from-[#eaf7f5] via-[#eff5ff] to-[#f9f5ec] py-20 lg:py-28" id="funciona"><div class="mx-auto max-w-7xl px-5 lg:px-8"><div class="mx-auto max-w-3xl text-center"><span class="text-sm font-extrabold uppercase tracking-[.2em] text-teal-700">Cómo funciona</span><h2 class="mt-4 font-display text-3xl font-extrabold sm:text-4xl">Tres pasos para tomar decisiones con más claridad</h2><p class="mt-5 text-lg text-slate-600">OpoViable está concebido como un simulador de escenarios, no como una promesa de conseguir plaza.</p></div><div class="mt-14 grid gap-6 md:grid-cols-3"><article class="feature-card rounded-3xl border border-white bg-white p-8 shadow-sm"><span class="text-5xl font-extrabold text-teal-200">01</span><h3 class="mt-6 text-xl font-extrabold">Define tu punto de partida</h3><p class="mt-3 leading-7 text-slate-600">Elige una oposición y estima tus horas semanales y el plazo disponible.</p></article><article class="feature-card rounded-3xl border border-white bg-white p-8 shadow-sm"><span class="text-5xl font-extrabold text-teal-200">02</span><h3 class="mt-6 text-xl font-extrabold">Compara escenarios</h3><p class="mt-3 leading-7 text-slate-600">Visualiza alternativas de dedicación conservadora, habitual o intensiva y su impacto orientativo.</p></article><article class="feature-card rounded-3xl border border-white bg-white p-8 shadow-sm"><span class="text-5xl font-extrabold text-teal-200">03</span><h3 class="mt-6 text-xl font-extrabold">Decide con perspectiva</h3><p class="mt-3 leading-7 text-slate-600">Valora qué ritmo se adapta mejor a tu vida y qué cambios necesitarías para sostenerlo.</p></article></div></div></section>
+<section class="py-20 lg:py-28" id="beneficios"><div class="mx-auto max-w-7xl px-5 lg:px-8"><div class="grid items-center gap-12 lg:grid-cols-2"><div class="grid grid-cols-2 gap-4"><img alt="Persona estudiando y organizando su tiempo" class="h-64 w-full rounded-3xl object-cover" data-fallback="https://nawjanimri.github.io/opoviable/imagenes/imagen_3.jpg" loading="lazy" src="imagenes/imagen_3.jpg"/><img alt="Persona adulta estudiando desde casa" class="mt-10 h-64 w-full rounded-3xl object-cover" data-fallback="https://nawjanimri.github.io/opoviable/imagenes/imagen_4.jpg" loading="lazy" src="imagenes/imagen_4.jpg"/></div><div><span class="text-sm font-extrabold uppercase tracking-[.2em] text-teal-700">Pensado para tu realidad</span><h2 class="mt-4 font-display text-3xl font-extrabold sm:text-4xl">No todos los opositores parten del mismo lugar.</h2><p class="mt-6 text-lg leading-8 text-slate-600">OpoViable quiere ayudar especialmente a quienes no pueden dedicar una jornada completa al estudio.</p><div class="mt-8 grid gap-5"><div class="rounded-2xl border border-slate-100 p-5"><h3 class="font-extrabold">Trabajo y familia</h3><p class="mt-1 text-slate-600">Introduce una disponibilidad que contemple responsabilidades e imprevistos.</p></div><div class="rounded-2xl border border-slate-100 p-5"><h3 class="font-extrabold">Decisiones más realistas</h3><p class="mt-1 text-slate-600">Compara opciones antes de invertir meses de esfuerzo.</p></div><div class="rounded-2xl border border-slate-100 p-5"><h3 class="font-extrabold">Sin falsas certezas</h3><p class="mt-1 text-slate-600">Escenarios orientativos con supuestos visibles, no porcentajes de aprobado inventados.</p></div></div></div></div></div></section>
+<section class="bg-navy py-20 text-white"><div class="mx-auto grid max-w-7xl items-center gap-10 px-5 lg:grid-cols-[1fr_1fr] lg:px-8"><div><span class="text-sm font-extrabold uppercase tracking-[.2em] text-teal-300">Tu tiempo cuenta</span><h2 class="mt-4 font-display text-3xl font-extrabold sm:text-4xl">El mejor plan es el que puedes mantener.</h2><p class="mt-5 text-lg leading-8 text-slate-300">No se trata de estudiar como si no tuvieras obligaciones. Se trata de tomar decisiones con las obligaciones que sí tienes.</p><a class="mt-8 inline-block rounded-full bg-teal px-7 py-4 font-bold text-navy hover:bg-teal-300" href="#simulador">Probar el simulador →</a></div><img alt="Persona reflexionando sobre su preparación" class="h-80 w-full rounded-3xl object-cover lg:h-96" data-fallback="https://nawjanimri.github.io/opoviable/imagenes/imagen_5.jpg" loading="lazy" src="imagenes/imagen_5.jpg"/></div></section>
+<section class="py-20" id="faq"><div class="mx-auto max-w-4xl px-5"><h2 class="text-center font-display text-3xl font-extrabold sm:text-4xl">Preguntas frecuentes</h2><div class="mt-10 divide-y divide-slate-200"><details class="group py-5"><summary class="cursor-pointer list-none font-bold">¿OpoViable puede decirme si aprobaré? <span class="float-right text-teal-700">+</span></summary><p class="mt-3 leading-7 text-slate-600">No. Su propósito es comparar escenarios orientativos de preparación, no garantizar resultados ni calcular probabilidades de aprobado sin datos validados.</p></details><details class="group py-5"><summary class="cursor-pointer list-none font-bold">¿Está pensado para quienes trabajan? <span class="float-right text-teal-700">+</span></summary><p class="mt-3 leading-7 text-slate-600">Sí. Está concebido especialmente para personas adultas con empleo, hijos u otras responsabilidades que limitan su tiempo de estudio.</p></details><details class="group py-5"><summary class="cursor-pointer list-none font-bold">¿Puedo probar ya el simulador? <span class="float-right text-teal-700">+</span></summary><p class="mt-3 leading-7 text-slate-600">Sí. Esta versión compara tus horas disponibles con rangos ilustrativos de preparación para distintas oposiciones. No sustituye el temario ni las bases de cada convocatoria.</p></details><details class="group py-5"><summary class="cursor-pointer list-none font-bold">¿Tengo que estar preparando una oposición? <span class="float-right text-teal-700">+</span></summary><p class="mt-3 leading-7 text-slate-600">No. También está dirigido a quienes se están planteando empezar y quieren evaluar antes si la preparación encaja con su vida.</p></details></div></div></section>
+<section class="bg-gradient-to-br from-[#e9f7f4] via-[#edf4ff] to-[#f5f8fc] py-20 lg:py-28" id="simulador">
+<div class="mx-auto max-w-6xl px-5 lg:px-8">
+<div class="mx-auto max-w-3xl text-center"><span class="text-sm font-extrabold uppercase tracking-[.2em] text-teal-700">Prototipo interactivo · Sin registro</span><h2 class="mt-4 font-display text-3xl font-extrabold sm:text-4xl">¿Encaja esta oposición en tu vida?</h2><p class="mt-5 text-lg leading-8 text-slate-600">Explora cuánto tiempo podrías dedicar a estudiar y compara distintos ritmos. No pedimos tu nombre ni tu correo.</p></div>
+<div class="mt-12 flex flex-col gap-6">
+<div class="rounded-3xl bg-white p-6 soft-shadow sm:p-9"><div class="flex items-center justify-between gap-2"><h3 class="font-display text-xl font-extrabold">Tu escenario</h3><span class="rounded-full bg-teal-50 px-3 py-1 text-xs font-bold text-teal-800">Cálculo local</span></div>
+<form class="mt-7 space-y-6" id="simulatorForm">
+<div><label class="mb-2 block text-sm font-bold" for="oposicion">Oposición que estás valorando</label><select class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3" id="oposicion"></select><p class="mt-2 text-xs leading-5 text-slate-500" id="examNote"></p></div>
+<div><label class="mb-2 flex justify-between gap-2 text-sm font-bold" for="horas"><span>Horas de estudio por semana</span><output class="text-teal-700" for="horas" id="horasOutput">12 h</output></label><input class="w-full accent-teal-600" id="horas" max="50" min="2" step="1" type="range" value="12"/><div class="mt-1 flex justify-between text-xs text-slate-400"><span>2 h</span><span>50 h</span></div></div>
+<div><label class="mb-2 block text-sm font-bold" for="meses">Plazo para preparar la oposición</label><select class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3" id="meses"><option value="6">6 meses</option><option selected="" value="12">12 meses</option><option value="18">18 meses</option><option value="24">24 meses</option><option value="36">36 meses</option><option value="48">48 meses</option></select></div>
+<div><label class="mb-2 block text-sm font-bold" for="regularidad">¿Qué regularidad podrás mantener?</label><select class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3" id="regularidad"><option value="0.9">Alta · 90 % de las semanas</option><option selected="" value="0.75">Media · 75 % de las semanas</option><option value="0.55">Variable · 55 % de las semanas</option></select></div>
+<div><label class="mb-2 block text-sm font-bold" for="base">Conocimientos previos relacionados con el temario</label><select class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3" id="base"><option value="0">Parto prácticamente de cero</option><option selected="" value="1">Conozco algunas materias</option><option value="2">Tengo una base sólida</option></select></div>
+<div><label class="mb-2 block text-sm font-bold" for="facilidad">¿Cómo valoras tu facilidad para comprender y retener contenidos?</label><select class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3" id="facilidad"><option value="rapido">Alta · Aprendo y retengo con relativa facilidad</option><option selected="" value="medio">Media · Necesito repasar con frecuencia</option><option value="pausado">Me cuesta más · Necesito más tiempo y repasos</option></select></div>
+<div><label class="mb-2 block text-sm font-bold" for="paginas">Páginas nuevas que puedes estudiar en una hora</label><select class="w-full rounded-xl border border-slate-300 bg-white px-4 py-3" id="paginas"><option value="1">1 página/hora</option><option value="2">2 páginas/hora</option><option selected="" value="3">3 páginas/hora</option><option value="4">4 páginas/hora</option><option value="5">5 páginas/hora</option><option value="6">6 páginas/hora</option><option value="8">8 páginas/hora</option></select><p class="mt-2 text-xs leading-5 text-slate-500">Piensa en páginas que realmente comprendes y recuerdas, no solo en lectura rápida. La estimación también contempla repasos y práctica.</p></div>
+<button class="w-full rounded-full bg-navy px-6 py-4 font-extrabold text-white transition hover:bg-teal hover:text-navy" type="submit">Ver mi evaluación de viabilidad →</button>
+</form><p class="mt-5 flex items-start gap-2 text-xs leading-5 text-slate-500"><span aria-hidden="true">🔒</span><span>Los datos de este simulador se procesan en tu navegador. No se envían a Google Sheets ni se guardan en un servidor por este formulario.</span></p></div>
+<div class="rounded-2xl border border-teal-700/30 bg-white p-5 sm:p-6"><p class="text-sm font-semibold text-teal-800">Horas necesarias estimadas para preparar el temario y las pruebas</p><p class="mt-2 text-3xl font-extrabold" id="requiredHours">—</p><p class="mt-2 text-xs leading-5 text-slate-700" id="requiredNote"></p></div><section aria-live="polite" aria-atomic="true" class="overflow-hidden rounded-3xl border-2 border-teal-600 bg-gradient-to-br from-teal-50 via-white to-amber-50 p-6 shadow-xl sm:p-8" id="balanceCard"><div class="flex flex-wrap items-center justify-between gap-3"><p class="text-sm font-extrabold uppercase tracking-widest text-teal-800">Tu conclusión personalizada</p><span class="rounded-full bg-slate-800 px-4 py-2 text-sm font-bold text-white" id="balanceStatus">Calculando…</span></div><h3 class="mt-3 font-display text-2xl font-extrabold leading-tight text-slate-900 sm:text-3xl">Balance para tu plazo</h3><p class="mt-4 text-lg font-semibold leading-8 text-slate-900" id="balance"></p><div class="mt-5 rounded-2xl border border-teal-200 bg-white p-5"><h4 class="font-extrabold text-teal-900">¿Qué puedes hacer para mejorar tu escenario?</h4><p class="mt-2 text-base leading-7 text-slate-800" id="balanceAdvice"></p></div><p class="mt-4 text-sm leading-6 text-slate-700" id="timeToGoal"></p><p class="mt-3 text-xs leading-5 text-slate-600">Esta valoración compara horas estimadas, no probabilidades de aprobar. No mide la calidad del estudio, el nivel de competencia ni la dificultad real de la convocatoria.</p></section><div aria-live="polite" class="rounded-3xl bg-navy p-6 text-white soft-shadow sm:p-9"><div class="flex items-center justify-between"><h3 class="font-display text-xl font-extrabold">Tu proyección</h3><span class="rounded-full border border-white/25 px-3 py-1 text-xs text-teal-200">Orientativa</span></div><p class="mt-8 text-sm text-slate-300">Horas estimadas de estudio efectivo</p><div class="mt-2 flex items-baseline gap-3"><strong class="font-display text-6xl font-extrabold tracking-tight text-teal-300" id="totalHoras">468</strong><span class="text-lg text-slate-300">horas</span></div><p class="mt-2 text-sm text-slate-300" id="formula">12 h/semana × 52 semanas × 75 % de regularidad</p>
+<div class="mt-9 border-t border-white/20 pt-7"><h4 class="font-bold">Compara otros ritmos</h4><div class="mt-5 space-y-5" id="scenarios"></div></div>
+<div class="mt-8 rounded-2xl border border-white/20 bg-white/10 p-5"><h4 class="font-extrabold text-teal-200">¿Qué significa este resultado?</h4><p class="mt-2 text-sm leading-7 text-slate-200">Son <strong>horas de planificación ilustrativas</strong>, no datos oficiales ni una predicción de aprobado. La carga depende del temario real, modalidad de examen, especialidad, convocatorias, material y experiencia. El cálculo incluye supuestos de repaso y práctica; verifica siempre las bases de tu convocatoria.</p></div>
+<button class="mt-6 text-sm font-semibold text-white underline underline-offset-4 hover:text-teal-200" id="resetSim" type="button">Restablecer valores</button></div>
+</div><div class="mt-12 rounded-3xl border border-teal-100 bg-white/80 p-6 text-center sm:p-8"><h3 class="font-display text-xl font-extrabold">Ayúdanos a mejorar OpoViable</h3><p class="mt-3 text-slate-600">¿Te ha resultado útil esta simulación? ¿Qué mejorarías? Puedes escribir a <a class="font-semibold text-teal-800 underline" href="mailto:opoviable@gmail.com?subject=Feedback%20OpoViable">opoviable@gmail.com</a>. No necesitas compartir tu identidad ni circunstancias personales, aunque tu dirección de correo será visible al enviarnos un mensaje.</p><p class="mt-3 text-xs leading-5 text-slate-500">Usaremos los mensajes únicamente para atender consultas y mejorar el proyecto. Consulta nuestra <a class="font-semibold text-teal-800 underline" href="privacidad.html">información de privacidad</a> antes de escribirnos.</p></div>
+</div></section>
+</main>
+<footer class="bg-[#081b30] py-10 text-slate-300"><div class="mx-auto flex max-w-7xl flex-col justify-between gap-5 px-5 md:flex-row md:items-center lg:px-8"><div><div class="font-display text-xl font-extrabold text-white">Opo<span class="text-teal">Viable</span></div><p class="mt-2 text-sm">Tu oposición, tu vida real.</p></div><div class="text-sm"><a class="hover:text-white" href="mailto:opoviable@gmail.com">Contacto</a><span class="mx-3"> · </span><a class="hover:text-white" href="privacidad.html">Privacidad</a><span class="mx-3">·</span><span class="text-slate-400">Simulación sin registro</span></div><p class="text-sm">© <span id="year"></span> OpoViable · Proyecto en validación</p></div></footer>
+<script>
+'use strict';
+const EXAMS = [
+ {id:'aux',group:'Administración general',name:'Auxiliar Administrativo del Estado (C2)',range:[550,850,1250],pages:700,note:'Test y ofimática; convocatoria estatal de referencia.'},
+ {id:'admin',group:'Administración general',name:'Administrativo del Estado (C1)',range:[900,1400,2000],pages:1100,note:'Test, supuestos y ofimática; convocatoria estatal de referencia.'},
+ {id:'gestion',group:'Administración general',name:'Gestión de la Administración Civil del Estado (A2)',range:[1600,2400,3400],pages:1700,note:'Temario amplio y pruebas de desarrollo/supuestos.'},
+ {id:'tai',group:'Informática',name:'Técnicos Auxiliares de Informática del Estado (C1)',range:[1000,1500,2200],pages:1200,note:'Materias técnicas, test y casos prácticos.'},
+ {id:'gsi',group:'Informática',name:'Gestión de Sistemas e Informática del Estado (A2)',range:[1500,2200,3200],pages:1600,note:'Materias técnicas, test y casos prácticos; varía con tu experiencia.'},
+ {id:'tics',group:'Informática',name:'Sistemas y Tecnologías de la Información del Estado (A1)',range:[2300,3400,4800],pages:2200,note:'Proceso técnico y competencial exigente; estimación amplia.'},
+ {id:'maestro',group:'Educación',name:'Maestros · Educación Primaria (especialidad orientativa)',range:[1200,1900,2800],pages:1200,note:'Incluye preparación didáctica y exposición. Cambia por comunidad y especialidad.'},
+ {id:'infantil',group:'Educación',name:'Maestros · Educación Infantil',range:[1200,1900,2800],pages:1200,note:'Incluye programación y defensa; cambia por comunidad autónoma.'},
+ {id:'secundaria',group:'Educación',name:'Profesorado de Secundaria (especialidad orientativa)',range:[1800,2700,3900],pages:1900,note:'Depende mucho de la especialidad; incluye prueba práctica y programación.'},
+ {id:'fp',group:'Educación',name:'Profesorado de FP / sectores singulares (orientativo)',range:[1700,2500,3700],pages:1750,note:'Especialidades y pruebas heterogéneas; comprueba convocatoria.'},
+ {id:'justicia',group:'Justicia',name:'Tramitación Procesal y Administrativa',range:[1000,1600,2400],pages:1300,note:'Temario jurídico y ejercicios según convocatoria.'},
+ {id:'auxjust',group:'Justicia',name:'Auxilio Judicial',range:[750,1150,1700],pages:900,note:'Temario jurídico y test/supuestos según convocatoria.'},
+ {id:'sanidad',group:'Sanidad',name:'Enfermería del sistema público (orientativo)',range:[1300,2100,3100],pages:1550,note:'Varía según servicio de salud, temario y experiencia clínica.'},
+ {id:'celador',group:'Sanidad',name:'Celador/a del sistema público (orientativo)',range:[450,750,1150],pages:650,note:'Varía según servicio de salud y convocatoria.'},
+ {id:'policia',group:'Seguridad',name:'Policía Nacional · Escala Básica',range:[1200,1900,2900],pages:1350,note:'Solo estima preparación teórica y pruebas; excluye entrenamiento físico y aptitud.'},
+ {id:'guardia',group:'Seguridad',name:'Guardia Civil · Escala de Cabos y Guardias',range:[1100,1750,2600],pages:1200,note:'Solo estima preparación teórica y pruebas; excluye entrenamiento físico y aptitud.'},
+ {id:'bomberos',group:'Seguridad',name:'Bomberos (convocatoria local orientativa)',range:[1400,2200,3300],pages:1400,note:'Muy variable por municipio; excluye preparación física.'},
+ {id:'otra',group:'Personalizada',name:'Otra oposición (referencia genérica)',range:[1000,1700,2700],pages:1200,note:'No es una estimación específica: consulta el temario y las pruebas reales.'}
+];
+const fmt = new Intl.NumberFormat('es-ES');
+const el=id=>document.getElementById(id);
+const f=el('simulatorForm');
+const sel=el('oposicion');
+let lastGroup='';
+for(const exam of EXAMS){
+ if(exam.group!==lastGroup){const group=document.createElement('optgroup');group.label=exam.group;sel.appendChild(group);lastGroup=exam.group;}
+ const option=document.createElement('option');option.value=exam.id;option.textContent=exam.name;sel.lastElementChild.appendChild(option);
+}
+sel.value='gsi';
+function estimate(){
+ const exam=EXAMS.find(x=>x.id===sel.value)||EXAMS[0];
+ const hours=Number(el('horas').value),months=Number(el('meses').value),regularity=Number(el('regularidad').value),weeks=months*52/12;
+ const available=Math.round(hours*weeks*regularity);
+ const level=el('facilidad').value;
+ const index={rapido:0,medio:1,pausado:2}[level];
+ const knowledge=Number(el('base').value);
+ const pages=Number(el('paginas').value);
+ // These are heuristic planning assumptions, not measured preparation times.
+ // Prior knowledge modifies the baseline by -15% (strong) / 0% (some) / +12% (none).
+ // Study pace modifies it within ±20%, preventing implausible precision.
+ const priorFactor=[1.12,1,0.85][knowledge];
+ const paceFactor=Math.max(0.8,Math.min(1.2,Math.sqrt(3/pages)));
+ const middle=Math.round(exam.range[index]*priorFactor*paceFactor/50)*50;
+ const lower=Math.round(middle*.85/50)*50;
+ const upper=Math.round(middle*1.15/50)*50;
+ el('horasOutput').textContent=hours+' h';
+ el('totalHoras').textContent=fmt.format(available);
+ el('formula').textContent=`${hours} h/semana × ${Math.round(weeks)} semanas × ${Math.round(regularity*100)} % de regularidad`;
+ el('examNote').textContent=exam.note;
+ el('requiredHours').textContent=`${fmt.format(lower)}–${fmt.format(upper)} h`;
+ el('requiredNote').textContent=`Referencia de planificación: ${fmt.format(middle)} h. Se ha ajustado según facilidad de estudio, conocimientos previos y páginas/hora. No es un baremo oficial ni se basa en datos individuales validados.`;
+ const ratio=available/middle;
+ const effectiveWeekly=hours*regularity;
+ const neededMonths=Math.ceil(middle/effectiveWeekly*12/52);
+ const extraWeekly=Math.max(0,Math.ceil(middle/weeks/regularity-hours));
+ const deficit=Math.max(0,middle-available);
+ let message,advice,status,cardClasses,badgeClasses;
+ if(ratio<.7){
+   status='Necesita ajustes';
+   message=`Con tus circunstancias actuales, este plazo parece insuficiente para completar la preparación estimada: dispondrías de unas ${fmt.format(available)} horas, frente a una referencia de ${fmt.format(middle)} horas (${Math.round(ratio*100)} %). Esto no significa que no puedas preparar la oposición; significa que convendría replantear el calendario antes de comprometerte.`;
+   advice=`Para acercarte a la referencia, podrías ampliar el plazo hasta unos ${neededMonths} meses manteniendo tu ritmo actual, o estudiar unas ${hours+extraWeekly} h/semana (${extraWeekly} más que ahora) durante los ${months} meses previstos. Comprueba si ese esfuerzo adicional es sostenible; si no lo es, prioriza otra fecha de convocatoria o un plan por etapas.`;
+   cardClasses='border-amber-500 bg-gradient-to-br from-amber-50 via-white to-orange-50';
+   badgeClasses='bg-amber-700 text-white';
+ }else if(ratio<1.15){
+   status='Viable con cautela';
+   message=`Tu dedicación se aproxima a la preparación estimada: ${fmt.format(available)} horas disponibles frente a ${fmt.format(middle)} de referencia (${Math.round(ratio*100)} %). Podrías plantearte este objetivo, pero el margen para retrasos, repasos y semanas difíciles sería reducido.`;
+   advice=ratio<1?`Para cubrir la referencia central dentro del plazo, necesitarías aproximadamente ${extraWeekly} h/semana adicionales, o ampliar el calendario hasta unos ${neededMonths} meses. Reserva tiempo para simulacros y repasos antes de decidir.`:`Aunque las horas encajan aproximadamente, conviene reservar un colchón para imprevistos y simulacros. Si el ritmo te resulta exigente, amplía el plazo en vez de sacrificar descansos.`;
+   cardClasses='border-sky-500 bg-gradient-to-br from-sky-50 via-white to-teal-50';
+   badgeClasses='bg-sky-800 text-white';
+ }else{
+   status='Margen favorable';
+   message=`Tu planificación ofrece un margen de horas favorable: ${fmt.format(available)} disponibles frente a ${fmt.format(middle)} de referencia (${Math.round(ratio*100)} %). Desde el punto de vista del tiempo, el objetivo parece razonablemente abordable, siempre que puedas mantener la constancia y estudiar con eficacia.`;
+   advice=`Utiliza ese margen para repasos espaciados, ejercicios y simulacros. Revisa las bases y el temario de tu convocatoria y ajusta el calendario tras unas semanas de estudio real; disponer de horas suficientes no garantiza aprobar.`;
+   cardClasses='border-emerald-600 bg-gradient-to-br from-emerald-50 via-white to-teal-50';
+   badgeClasses='bg-emerald-800 text-white';
+ }
+ el('balance').textContent=message;
+ el('balanceAdvice').textContent=advice;
+ el('balanceStatus').textContent=status;
+ el('balanceStatus').className=`rounded-full px-4 py-2 text-sm font-bold ${badgeClasses}`;
+ el('balanceCard').className=`mt-5 overflow-hidden rounded-3xl border-2 p-6 shadow-xl sm:p-8 ${cardClasses}`;
+ el('timeToGoal').textContent=`A tu ritmo actual, alcanzar la referencia central supondría aproximadamente ${neededMonths} meses. Es una orientación de planificación, no una predicción de aprobado.`;
+ const variants=[['Conservador',Math.max(2,Math.round(hours*.7))],['Tu ritmo',hours],['Intensivo',Math.min(50,Math.round(hours*1.3))]];
+ el('scenarios').replaceChildren();
+ for(const [name,hrs] of variants){
+  const val=Math.round(hrs*weeks*regularity);
+  const wrapper=document.createElement('div');
+  const top=document.createElement('div');top.className='mb-2 flex justify-between gap-2 text-sm';
+  const label=document.createElement('span');label.textContent=`${name} · ${hrs} h/sem`;
+  const strong=document.createElement('strong');strong.textContent=fmt.format(val)+' h';
+  top.append(label,strong);
+  const track=document.createElement('div');track.className='h-2 overflow-hidden rounded-full bg-white/20';
+  const bar=document.createElement('div');bar.className='h-full rounded-full bg-teal-300';bar.style.width=Math.min(100,Math.max(2,Math.round(val/middle*100)))+'%';
+  track.appendChild(bar);wrapper.append(top,track);el('scenarios').appendChild(wrapper);
+ }
+}
+f.addEventListener('submit',event=>{event.preventDefault();estimate();el('requiredHours').scrollIntoView({behavior:'smooth',block:'center'});});
+for(const input of f.querySelectorAll('input,select'))input.addEventListener('input',estimate);
+el('resetSim').addEventListener('click',()=>{f.reset();sel.value='gsi';estimate();});
+el('year').textContent=new Date().getFullYear();
+document.querySelectorAll('img[data-fallback]').forEach(img=>img.addEventListener('error',()=>{if(!img.dataset.retried){img.dataset.retried='1';img.src=img.dataset.fallback;}}));
+estimate();
+</script>
 </body>
 </html>
